@@ -30,17 +30,9 @@ namespace FooBarQixCore
             translateApplyer.Rules.Add(new RuleMatchAndTranslate('3', "Foo"));
             translateApplyer.Rules.Add(new RuleMatchAndTranslate('5', "Bar"));
             translateApplyer.Rules.Add(new RuleMatchAndTranslate('7', "Quix"));
-            translateApplyer.Rules.Add(new RuleMatchAndTranslate('0', "*"));
+
             var results2 = translateApplyer.ApplyRules(theInput);
             foreach (var res in results2) result += res.Value;
-
-
-
-
-            RuleApplyer<string, string> replaceApplyer = new RuleApplyer<string, string>();
-            replaceApplyer.Rules.Add(new RuleMatchAndReplace('0', "*"));
-
-
 
             return result;
 
