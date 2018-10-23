@@ -1,4 +1,5 @@
 ﻿using System;
+using RulePattern;
 using RulePattern.Interfaces;
 namespace FooBarQixCore.Conditions
 {
